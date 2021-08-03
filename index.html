@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1">
+	<title>Empresa microcemento</title>
+	<link rel="stylesheet" type="text/css" href="./bootstrap/css/bootstrap.min.css">
+	<link rel="icon" type="image/x-icon" href="./img/logo.png">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+</head>
+<body>
+
+	<div id="inicio" class="container-fluid p-0">
+
+		<!---------------------- BARRA NAVEGACION --------------------------->
+
+		<div class="row">
+
+			<nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark col-12">
+				<div class="container-fluid">
+					<a class="navbar-brand col-2" href="#">
+						EMPRESA MICROCEMENTO
+					</a>
+					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarSupportedContent">
+						<ul class="navbar-nav me-auto mb-2 mb-lg-0 col-7 justify-content-evenly">
+							<li class="nav-item">
+								<a class="nav-link active" aria-current="page" href="#inicio">inicio</a>
+							</li>
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+									Microcemento
+								</a>
+								<ul class="dropdown-menu bg-light" aria-labelledby="navbarDropdown">
+									<li><a class="dropdown-item" href="#ventajas1">Ventajas durante la obra</a></li>
+									<li><a class="dropdown-item" href="#ventajas2">Ventajas post obra</a></li>
+									<li><hr class="dropdown-divider"></li>
+									<li><a class="dropdown-item" href="#">Cuidados</a></li>
+								</ul>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#nosotros">Nosotros</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#footer">Contacto</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Nuestros trabajos</a>
+							</li>
+						</ul>
+						<form class="d-flex">
+							<input class="form-control me-2" id="buscar" type="search" placeholder="Buscar" aria-label="Search">
+							<button class="btn btn-outline-warning" type="submit">Buscar</button>
+						</form>
+					</div>
+				</div>
+			</nav>
+
+		</div>
+
+		<!----------------- FIN BARRA NAVEGACION ------------------------->
+
+		<!------------------ SLIDER + JUMBOTRON --------------------------->
+
+		<div class="row">
+
+			<div id="carouselExampleCaptions" class="carousel slide col-12 p-0" data-bs-ride="carousel">
+				<div class="carousel-indicators">
+					<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+					<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+					<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+				</div>				
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<img src="./img/imagen1.jpg" class="d-block w-100" alt="...">
+					</div>
+					<div class="carousel-item">
+						<img src="./img/img4.jpg" class="d-block w-100" alt="...">
+					</div>
+					<div class="carousel-item">
+						<img src="./img/img3.jpg" class="d-block w-100" alt="...">
+					</div>
+
+					<!-- JUMBOTRON -------->
+
+					<div id="jumbotron" class="jumbotron position-absolute p-4">
+						<h1 class="display-4">Hacé tu compra online</h1>
+						<h5 class="my-3">Elegi los materiales y colores que mas te gusten y reserva tu turno</h5>
+						<hr class="my-2" />
+						<p class="lead my-4 d-none d-lg-block">Podes elegir entre cientos de nuestros colores, con *nombre empresa* decora tu hogar con el color de tus sueños</p>
+						<!--<a href="#" class="btn btn-warning btn-lg my-4">Comprar</a>-->
+						<button type="button" class="btn btn-warning btn-lg my-4" data-bs-toggle="modal" data-bs-target="#exampleModal">
+							Comprar <i class="bi bi-cart-plus"></i>
+						</button>
+
+						<!-- Modal -->
+						<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<div class="modal-header">
+										<h5 class="modal-title" id="exampleModalLabel">No disponible aún</h5>
+										<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+									</div>
+									<div class="modal-body">
+										Esta opcion no esta disponible todavia, estamos trabajando para solucionarlo cuanto antes.
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- FIN JUMBOTRON -------->
+				</div>
+
+			</div>
+
+		</div>
+
+		<!------------ FIN SLIDER + JUMBOTRON ------------------------------>
+
+		<!--------------------- TARJETAS --------------------------------------->
+
+		<div class="row col-12 mt-3 mt-lg-5 ms-1">
+
+			<div id="ventajas1" class="col-12 mt-3 justify-content-center d-flex" style="height: 100px;">
+				<h1 class="text-center titulos"> MICROCEMENTO</h1>
+				<a id="question" tabindex="0" class="btn" role="button" data-bs-toggle="popover" data-bs-trigger="focus" title="¿Qué es el microcemento?" data-bs-content="El microcemento es un revestimiento continuo formado por dos componentes básicos: microcemento en polvo y resina líquida. De la mezcla de estos dos elementos resulta una pasta uniforme para aplicar en suelos, paredes y techos.">
+					<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-question-circle" viewBox="0 0 16 16">
+						<path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+						<path d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286zm1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94z"/>
+					</svg>
+				</a>
+				
+			</div>
+
+		</div>
+
+		<div class="row justify-content-around">
+			<div class="col-12 p-2" style="height: auto;">
+				<h3 class="ms-5 mb-5 my-lg-5">Ventajas durante la obra</h3>
+			</div>
+			<div class="card col-3 p-0 border-0">
+				<img src="./img/baño.jpg" class="card-img-top" alt="...">
+				<div class="card-body">
+					<h5 class="card-title">Superficies continuas</h5>
+					<p class="card-text">Nuestros pisos no requieren de juntas de dilatación.</p>						
+				</div>
+			</div>
+
+			<div class="card col-3 p-0 border-0">
+				<img src="./img/img5.jpg" class="card-img-top" alt="...">
+				<div class="card-body">
+					<h5 class="card-title">Ahorro de $ en obra</h5>
+					<p class="card-text">Sin picado / sin volquete / sin permisos de obras.</p>						
+				</div>
+			</div>
+
+			<div class="card col-3 p-0 border-0">
+				<img src="./img/img6.jpg" class="card-img-top" alt="...">
+				<div class="card-body">
+					<h5 class="card-title">Sobre cualquier superficie</h5>
+					<p class="card-text">Sanas o deterioradas, con previa reparación y limpieza de superficie.</p>						
+				</div>
+			</div>				
+		</div>
+
+
+
+		<div class="row justify-content-around px-5">
+			<div id="ventajas2" class="col-12 mt-4 p-2" style="height: auto;">
+				<h3 class="ms-5 mb-5 my-lg-5">Ventajas post obra</h3>
+			</div>
+			<div class="card col-3 p-0 border-0">
+				<img src="./img/baño.jpg" class="card-img-top" alt="...">
+				<div class="card-body">
+					<h5 class="card-title">Bajo mantenimiento</h5>
+					<p class="card-text">Limpieza solo con agua y jabón neutro..</p>						
+				</div>
+			</div>
+
+			<div class="card col-3 p-0 border-0">
+				<img src="./img/img5.jpg" class="card-img-top" alt="...">
+				<div class="card-body">
+					<h5 class="card-title">Resistencia</h5>
+					<p class="card-text">Altamente resistente</p>						
+				</div>
+			</div>
+
+			<div class="card col-3 p-0 border-0">
+				<img src="./img/img6.jpg" class="card-img-top" alt="...">
+				<div class="card-body">
+					<h5 class="card-title">Terminaciones</h5>
+					<p class="card-text">Admite acabados rústicos de gran originalidad y vistosidad.</p>						
+				</div>
+			</div>
+
+			<div class="card col-3 p-0 border-0">
+				<img src="./img/img8.jpg" class="card-img-top" alt="...">
+				<div class="card-body">
+					<h5 class="card-title">Decoracion</h5>
+					<p class="card-text">El microcemento realza tu estilo..</p>						
+				</div>
+			</div>			
+			
+		</div>
+
+		
+
+		<!--------------------- FIN TARJETAS --------------------------------------->
+
+		<!--------------------- NOSOTROS --------------------------------------->
+
+		<div id="nosotros" class="row px-4 px-lg-0 mb-5">
+			<div class="col-12 mt-5">
+				<h1 class="text-center titulos mb-5">NOSOTROS</h1>
+			</div>
+
+				<div class="col-12 col-sm-6 align-self-center mb-3 mb-sm-0">
+					<h2 class="text-center">EMPRESA MICROCEMENTO</h2>
+					<!--<img src="./img/logo-empresa.png" id="logo">-->
+				</div>
+
+				<div class="col-12 col-sm-6 col-md-5 align-self-center">
+					<p class="lh-lg" id="nosotros">
+						<h5 class="d-flex justify-content-center">¿Por que nos dedicamos únicamente a la aplicación de microcemento?</h5> <br/>Somos una empresa joven que brinda  un servicio de excelencia, enfocados en ofrecer soluciones con una alternativa diferente y un enfoque único, contamos el mejor producto acompañado de la mano de obra artesanal de nuestro staff capacitado íntegramente por *nombre empresa* Microcemento&copy;.
+					</p>
+				</div>
+				
+			</div>
+
+			<!--------------------- FIN NOSOTROS --------------------------------------->
+
+			<!--------------------- FOOTER --------------------------------------->
+
+			<footer id="footer" class="col-12">
+				<div class="row bg-dark text-center p-2" style="height: auto;">
+					<div class="col-lg-3 mt-4 order-1 order-lg-1">
+						<h3 class="text-light">Comprar online</h3>
+						<div class="btn btn-warning mt-3 mb-4" data-bs-toggle="modal" data-bs-target="#exampleModal">Continuar comprando <i class="bi bi-cart-plus"></i></div>
+					</div>
+
+					<div class="col-12 col-lg-5 mt-4 order-3 order-lg-2 ms-0 p-1">
+						<h3 class="text-light mb-4">Contacto</h3>
+						<ul id="media" class="text-light p-0">
+							<li class="my-1">
+								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook me-1" viewBox="0 0 16 16">
+									<path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+								</svg>
+								<a href="#">https://www.facebook.com/RevestimientosEmpresaMicrocemento/</a>
+							</li>
+							<li class="mb-1">
+								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+									<path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+								</svg>
+								<a href="#">https://www.instagram.com/nombre_empresa//</a>
+							</li>
+							<li class="mt-1">
+								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope me-1 mt-1" viewBox="0 0 16 16">
+									<path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z"/>
+								</svg>
+								<a href="#">nombre_empresa@gmail.com</a>
+							</li>
+							<li class="mb-3" >
+								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+									<path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/>
+								</svg>
+								<a href="#">11 3105 546 3</a>
+							</li>
+							<hr class="d-none d-lg-block" />
+							<li>
+								<button type="button" class="btn btn-warning mb-2" id="liveToastBtn"><i class="bi bi-chat"></i> Chatear en vivo</button>
+
+								<div class="position-fixed bottom-0 end-0 p-3" style="z-index: 5">
+									<div id="liveToast" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true">
+										<div class="toast-header">
+											<img src="./img/logo-empresa1.png" class="rounded me-2" alt="...">
+											<strong class="me-auto">Chat en vivo</strong>
+											<small>Ahora</small>
+											<button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+										</div>
+										<div class="toast-body text-dark">
+											<textarea type="text" id="textarea" class="mt-2 p-2" placeholder="¿En que podemos ayudarte?"></textarea>
+											<button type="button" class="btn btn-warning">Enviar</button>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li id="copy" class="text-end">GonzaJerezWeb&copy;</li>
+						</ul>
+					</div>
+
+					<div class="col-lg-4 mt-4 order-2 order-lg-3">
+						<div id="location">
+							<h3 class="text-light">DONDE ENCONTRARNOS</h3>
+							<iframe class=" mb-4" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22131.24858577985!2d-58.90104491735041!3d-34.456468473830434!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bc9cb6643d2003%3A0xa8da0402f634b636!2sPilar%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1623262291637!5m2!1ses!2sar" width="220" height="220" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+						</div>
+					</div>
+				</div>
+			</footer>
+
+			<!--------------------- FIN FOOTER --------------------------------------->
+
+		</div> <!-- CONTAINER GENERAL-->
+
+
+		<!--------------------------------------- QUERYS ----------------------------------------------------------------------------->
+		
+		<script type="text/javascript" src="./jquery/jquery-3.6.0.min.js"></script>
+		<script type="text/javascript" src="./jquery/popper.min.js"></script>
+		<script type="text/javascript" src="./bootstrap/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="styles.css">
+
+		<script>
+			$(document).ready(function(){
+				$('.carousel').carousel({
+					interval: 10000,
+					cycle: true,	
+					pause: false
+				})
+			})
+			/*
+			$(window).scroll(function() {
+				var scrollPos = $(window).scrollTop(),
+				navbar = $('.navbar');
+
+				if (scrollPos > 10) {
+					navbar.addClass('alt-color');
+				} else {
+					navbar.removeClass('alt-color');
+				}
+			});
+			*/
+
+			var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+			var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+				return new bootstrap.Popover(popoverTriggerEl)
+			})
+
+			document.getElementById("liveToastBtn").onclick = function() {
+			var myAlert =document.getElementById('liveToast');//select id of toast
+			var bsAlert = new bootstrap.Toast(myAlert);//inizialize it
+			bsAlert.show();//show it
+		}
+
+	</script>
+
+</body>
+</html>
